@@ -173,3 +173,4 @@ The Blitz community is warm, safe, diverse, inclusive, and fun! Feel free to rea
 - [Sponsor or donate](https://github.com/blitz-js/blitz#sponsors-and-donations)
 
 # blitz-prisma
+# blitz-prisma
