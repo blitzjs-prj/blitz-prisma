@@ -40,9 +40,9 @@ export default function Note(props) {
               </button>
             </span>
           </div>
-          <div className={styles.noteDescIngreCnt}>
+          <div className={styles.noteContentCnt}>
             <h2>Content</h2>
-            <div className={styles.noteSynopsis}>{note?.content}</div>
+            <div className={styles.noteContent}>{note?.content}</div>
           </div>
         </div>
       </div>

@@ -1,15 +1,14 @@
 import { useRef, useState } from "react"
 import createNote from "app/notes/mutations/createNote"
-import { Link, useRouter, useMutation, BlitzPage, Routes } from "blitz"
+import { useMutation } from "blitz"
 
 export default function AddNote({ closeModal }) {
   const [disable, setDisable] = useState(false)
   const formRef = useRef()
-  const router = useRouter()
   const [createNoteMutation] = useMutation(createNote)
 
   async function addNewNote(params) {
-    //setDisable(true)
+    setDisable(true)
     const { addNoteName, addNoteContent } = formRef.current
 
     const name = addNoteName.value
@@ -19,7 +18,7 @@ export default function AddNote({ closeModal }) {
       content,
     })
 
-    //setDisable(false)
+    setDisable(false)
     window.location.reload()
   }
   return (
