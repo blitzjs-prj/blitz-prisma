@@ -1,6 +1,6 @@
 import { useState, useRef } from "react"
 import updateNote from "app/notes/mutations/updateNote"
-import { Link, useRouter, useMutation, BlitzPage, Routes } from "blitz"
+import { useMutation } from "blitz"
 
 export default function EditNote({ closeModal, note }) {
   const formRef = useRef()
